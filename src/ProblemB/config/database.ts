@@ -1,9 +1,12 @@
 import mongoose from 'mongoose';
+const mongoUri = process.env.MONGO_URI as string;
 
 const connectDB = async (retries = 5) => {
   while (retries) {
     try {
-      await mongoose.connect('mongodb://localhost:27017/express-ts-mvc');
+      console.log('Connecting to MongoDB...', mongoUri);
+      await mongoose.connect(mongoUri);
+
       console.log('MongoDB connected');
       break; // Exit the loop if connection is successful
     } catch (error) {

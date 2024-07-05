@@ -4,8 +4,7 @@ import connectDB from './config/database';
 import productRoutes from './router/productRoutes';
 
 const app: Application = express();
-const PORT = 5000;
-
+const PORT = process.env.PORT;
 connectDB();
 
 app.use(bodyParser.json());
