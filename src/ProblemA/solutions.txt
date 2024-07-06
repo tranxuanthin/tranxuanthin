@@ -1,0 +1,11 @@
+Function sum_to_n_a`: This function uses a for loop to iterate from 1 to n, adding each number
+to the variable `sum. Time Complexity: O(n) because the loop runs n times. Space Complexity:
+O(1) because it uses a constant amount of extra space regardless of the input size.
+
+Function `sum_to_n_b`: This function uses recursion to compute the sum. It calls itself with n - 1
+until n is 1 or 0. Time Complexity: O(n) because the function makes n recursive calls. Space
+Complexity: O(n) due to the recursion stack, which grows linearly with n.
+
+Function `sum_to_n_c`: This function uses the mathematical formula for the sum of the first n
+natural numbers: n(n+1)/2. Time Complexity: O(1) because the calculation uses a constant number
+of operations. Space Complexity: 0(1) because it uses a fixed amount of space.

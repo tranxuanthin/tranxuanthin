@@ -1,0 +1,7 @@
+To build a scalable and easily maintainable backend solution with minimal dependencies, I utilize Docker. Docker is widely adopted for its containerization technology, ideal for deploying applications.
+
+For technology choices, I opt for Express.js for its flexibility and MongoDB as the database, meeting project requirements.
+
+I follow a common structure for handling problems, using the pattern: request -> router -> controller -> model. This structure provides a familiar framework for organizing the project.
+
+Once the structure is in place, I proceed to implement CRUD operations as per the code challenge requirements.
